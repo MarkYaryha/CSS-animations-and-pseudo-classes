@@ -4,6 +4,41 @@ body {
    font-weight: bold;
 }
 
+.box2 {
+   height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+  }
+
+  .secondbutton {
+   display: block; 
+   background-color: rgb(143, 47, 234);
+   padding: 5px 10px;
+   border-radius:40%;
+   font-size: 30px;
+   border: 2px;
+   position: absolute;
+   border-color: rgb(16, 5, 27);
+   border-radius: 10%;
+   border: 1px;
+   border-style: solid ;
+   margin: 0 auto;
+   transition: all 1s ease 0s;
+   transition-duration: 0.5s;
+   transition: background-color 1s;
+}
+
+.secondbutton:hover {
+   background-color: white;
+   }
+   
+   .secondbutton:hover + .parag {
+          opacity: 100%
+       }
+
+       
 @keyframes rotating-square {
    /* from {transform: rotate(360deg);} */
    /* to {transform: rotate(0deg);} */
@@ -19,6 +54,14 @@ body {
    justify-content: center;   
 }
 
+.parag {
+   width: 13%; 
+   position: absolute;
+   margin-top: 130px;
+   opacity: 0%;
+   transition: all 1s;
+   transition-delay: 0.5s;
+  }
 .column-animation {
    width: 30px;
    height: 30px;
@@ -29,7 +72,7 @@ body {
 }
 
 .column-animation2:hover {
-   animation: columns2 0.5s;
+   animation: columns2 1s;
    animation-fill-mode: both;
    animation-timing-function: ease-in-out;
 }
@@ -40,7 +83,7 @@ body {
 }
 
 .column-animation3 {
-   animation: columns3 0.5s;
+   animation: columns3 0.7s;
    animation-fill-mode: forwards;
    animation-timing-function: ease-in-out;
 }
@@ -52,7 +95,7 @@ body {
 
 .text-box {
    display: flex;
-   margin-left: 850px;
+   margin-left: 600px;
    margin-top: 200px;
 }
 
